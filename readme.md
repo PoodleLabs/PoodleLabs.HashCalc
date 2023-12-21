@@ -18,7 +18,13 @@ For example:
 For a network hashrate of 500m TH/s, for a single S19J XP with an electricity cost of $0.10 KW/h and a Bitcoin price of $100,000, outputs:
 
 ```
-Hash Rate: 151.02 TH/s
+Hash Rate:                           151.02 TH/s
+Network Blocks Per Solo Mined Block: 3310748.38
+Expected Solo Block Hours:           551791.4
+Expected Solo Block Days:            22991.31
+Expected Solo Block Years:           62.95
+
+The below values assume pooled mining with a perfectly fair, 0 fee payout:
 
 Expected values per Block:
 Gross Mining Reward: 0.09439

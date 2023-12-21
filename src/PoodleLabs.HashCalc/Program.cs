@@ -90,7 +90,14 @@ internal static class Program
         var wattsPerBlock = miningWatts / 6;
         var blockCost = wattsPerBlock * (priceKwh / 1000);
 
-        Console.WriteLine($"Hash Rate: {ownHashRate:0.##} TH/s");
+        var btb = 1 / hashShare;
+        Console.WriteLine($"Hash Rate:                           {ownHashRate:0.##} TH/s");
+        Console.WriteLine($"Network Blocks Per Solo Mined Block: {btb:0.##}");
+        Console.WriteLine($"Expected Solo Block Hours:           {btb / 6:0.##}");
+        Console.WriteLine($"Expected Solo Block Days:            {btb / 6 / 24:0.##}");
+        Console.WriteLine($"Expected Solo Block Years:           {btb / 6 / 24 / 365.2425m:0.##}");
+        Console.WriteLine();
+        Console.WriteLine($"The below values assume pooled mining with a perfectly fair, 0 fee payout:");
         Console.WriteLine();
         void WriteValuesForBlockCount(string periodDescription, decimal blockCount)
         {
