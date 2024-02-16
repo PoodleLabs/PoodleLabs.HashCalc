@@ -1,3 +1,5 @@
+**NOTE: PoodleLabs is moving homes to a self-hosted GitHub alternative; these repositories have been left up for posterity, and will not be updated**
+
 # Hash Calc
 
 A simple tool for calculating expected income, electricity cost and energy usage on a per-block, per-hour, per-day and per-year basis for arbitrarty mining setups given expected network hash rates, block rewards, and some information about a mining setup.
